@@ -185,12 +185,18 @@ scp -r models to 2080
 
 ```bash
 .
-├── 30degree-2fps
-│   └── model_2024-11-02-03-05-31.zip
-├── 45degree-2fps
-│   └── model_2024-10-05-02_49_11.zip
-└── 45degree-2fps-better
-    └── model_2024-10-20-06_02_09.zip
+├── first-stage
+│   ├── 30-degree
+│   │   └── net_9301.pth
+│   └── 45-degree
+│       └── net_059.pth
+└── second-stage
+    ├── 30degree-2fps
+    │   └── model_2024-11-02-03-05-31.zip
+    ├── 45degree-2fps
+    │   └── model_2024-10-05-02_49_11.zip
+    └── 45degree-2fps-better
+        └── model_2024-10-20-06_02_09.zip
 ```
 
 Choose the weight and unzip it. Then put it in the root path in the working directory for your repo.
