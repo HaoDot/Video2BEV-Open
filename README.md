@@ -146,7 +146,7 @@ sh test.sh
   - Refer to 
 - Second-stage evaluation:
   - Check to `second-stage-evalution` branch by `git checkout second-stage-evalution`
-  - Refer to 
+  - Refer to [this file](https://github.com/HaoDot/Video2BEV-Open/blob/second-stage-evalution/README.md)
 
 ```
 # Train:
