@@ -1,12 +1,14 @@
 <h1 align="center"> UniV-Baseline </h1>
 
-<h1 align="left"> Download [UniV]</h1>
+<h1 align="left"> Download UniV</h1>
 
 [![Video Thumbnail](./assets/UniV-bilibili.png)](https://www.bilibili.com/video/BV1SMhPzpEo2/?vd_source=d3914df06c5b07c8b14988e73b055956)
 
-**Task 1: *Video-based* drone-view target localization.** (Drone -> Satellite) Given one drone-view video, the task aims to find the most similar satellite-view image to localize the target building in the satellite view. 
+<h1 align="center"> Click the image to the visualization of UniV</h1>
 
-**Task 2: *Video-based* Drone navigation.** (Satellite -> Drone) Given one satellite-view image, the drone intends to find the most relevant place that it has passed by.
+**Task 1: *Video-based* drone-view target localization.** (Drone-video -> Satellite-image) Given one drone-view video, the task aims to find the most similar satellite-view image to localize the target building in the satellite view. 
+
+**Task 2: *Video-based* Drone navigation.** (Satellite-image -> Drone-video) Given one satellite-view image, the drone intends to find the most relevant place that it has passed by.
 
 [BaiduCloud](https://pan.baidu.com/s/1fTEN3E2V82tia0JKAoTkrw?pwd=4g47)|
 
@@ -14,11 +16,11 @@
 
 - [x] Release the UniV dataset
 - [x] Release the weight of the second stage
-- [ ] Release the testing code for the second stage
-- [ ] Release the training code for the second stage
+- [ ] Release the ***evaluation*** code for the second stage
+- [ ] Release the **training** code for the second stage
 - [ ] Release the weight of the first stage
-- [ ] Release the testing code for the first stage
-- [ ] Release the training code for the first stage
+- [ ] Release the ***evaluation*** code for the first stage
+- [ ] Release the **training** code for the first stage
 
 <h1 align="left"> Table of contents</h1>
 
@@ -120,6 +122,13 @@ If you have any question of installing apex, please refer to [issue-2](https://g
 
 #### First-stage train & evaluation
 
+- First-stage training:
+  - Check to `first-stage-training` branch by `git checkout first-stage-training`
+  - Refer to 
+- First-stage evaluation:
+  - Check to `first-stage-evalution` branch by `git checkout first-stage-evalution`
+  - Refer to 
+
 ```bash
 # Train:
 # In the first stage, we fine-tune the encoder with the instance loss and contrastive loss.
@@ -131,6 +140,13 @@ sh test.sh
 ```
 
 ####  Second-stage train & evaluation
+
+- Second-stage training:
+  - Check to `second-stage-training` branch by `git checkout second-stage-training`
+  - Refer to 
+- Second-stage evaluation:
+  - Check to `second-stage-evalution` branch by `git checkout second-stage-evalution`
+  - Refer to 
 
 ```
 # Train:
@@ -183,7 +199,15 @@ PS:
 
 - `model_2024-11-02-03-05-31` is the weight for 30-degree UniV (2fps) and `model_2024-10-05-02_49_11` is the weight for 45-degree UniV (2fps)
   - The evaluation number should be the same as our paper
-- By tuning hyper-parameter, we can get a better result, please feel free to choose either number
+- By tuning hyper-parameter, we got a better result.
+
+
+
+
+
+
+
+------
 
 ## Citation
 
@@ -197,6 +221,7 @@ The following paper uses and reports the result of the baseline model. You may c
 }
 ```
 Others:
+
 ```bibtex
 @article{zheng2020university,
   title={University-1652: A Multi-view Multi-source Benchmark for Drone-based Geo-localization},
@@ -216,3 +241,4 @@ Others:
   publisher={ACM New York, NY, USA}
 }
 ```
+
