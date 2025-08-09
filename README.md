@@ -16,9 +16,9 @@
 
 - [x] Release the UniV dataset
 - [x] Release the weight of the second stage
-- [ ] Release the ***evaluation*** code for the second stage
+- [x] Release the ***evaluation*** code for the second stage
 - [ ] Release the **training** code for the second stage
-- [ ] Release the weight of the first stage
+- [x] Release the weight of the first stage
 - [ ] Release the ***evaluation*** code for the first stage
 - [ ] Release the **training** code for the first stage
 
