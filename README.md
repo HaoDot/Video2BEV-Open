@@ -12,17 +12,20 @@
 
 ## TODOs
 
-- [ ] Release the UniV dataset
-- [ ] Release the training code for the first stage
-- [ ] Release the weight of the first stage
+- [x] Release the UniV dataset
+- [x] Release the weight of the second stage
+- [ ] Release the testing code for the second stage
 - [ ] Release the training code for the second stage
-- [ ] Release the weight of the second stage
+- [ ] Release the weight of the first stage
+- [ ] Release the testing code for the first stage
+- [ ] Release the training code for the first stage
 
 <h1 align="left"> Table of contents</h1>
 
 - [Dataset Introduction](#About-Dataset)
 - [Getting started](#Getting-started)
 - [Dataset & Preparation](#Dataset-&-Preparation)
+- [Train & Evaluation](#Train-&-Evaluation)
 - [Train & Evaluation](#Train-&-Evaluation)
 - [Citation](#Citation)
 
@@ -101,27 +104,7 @@ cd apex
 python setup.py install --cuda_ext --cpp_ext
 ```
 
-If you have any question of installing apex, please refer to [issue-1]() first, then search for possible solutions.
-
-We have test on two versions of CUDA (CUDA 11.0 + torch1.7.1; CUDA11.6 + torch1.13.1).
-
-```
-git clone https://github.com/NVIDIA/apex.git
-cd apex
-python setup.py install --cuda_ext --cpp_ext
-https://zhuanlan.zhihu.com/p/80386137
-ModuleNotFoundError: No module named 'packaging'
---no-build-isolation 
-apex AttributeError: module 'torch.distributed' has no attribute '_all_gather_base'
-https://blog.csdn.net/qq_44741914/article/details/128087328
-https://blog.csdn.net/rocking_struggling/article/details/121884775
-no GPU
-https://github.com/NVIDIA/apex/issues/990
-nvcc fatal
-unsupported GNU version! gcc versions later than 9 are not supported!
- pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
-https://github.com/NVIDIA/apex/issues/278
-```
+If you have any question of installing apex, please refer to [issue-2](https://github.com/HaoDot/Video2BEV-Open/issues/2) first, then search for possible solutions.
 
 ## Dataset & Preparation
 - Download UniV.
@@ -180,7 +163,27 @@ scp -r models to 2080
 	- test.sh
 ```
 
+## Weights
 
+[Download link](https://pan.baidu.com/s/1ZjssipR0RGfoPaETo4QhsQ?pwd=ahi4)
+
+```bash
+.
+├── 30degree-2fps
+│   └── model_2024-11-02-03-05-31.zip
+├── 45degree-2fps
+│   └── model_2024-10-05-02_49_11.zip
+└── 45degree-2fps-better
+    └── model_2024-10-20-06_02_09.zip
+```
+
+Choose the weight and unzip it. Then put it in the root path in the working directory for your repo.
+
+PS: 
+
+- `model_2024-11-02-03-05-31` is the weight for 30-degree UniV (2fps) and `model_2024-10-05-02_49_11` is the weight for 45-degree UniV (2fps)
+  - The evaluation number should be the same as our paper
+- By tuning hyper-parameter, we can get a better result, please feel free to choose either number
 
 ## Citation
 
