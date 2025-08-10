@@ -143,12 +143,12 @@ sh test.sh
 
 - Second-stage training:
   - Check to `second-stage-training` branch by `git checkout second-stage-training`
-  - Refer to 
+  - Refer to [this file](https://github.com/HaoDot/Video2BEV-Open/tree/second-stage-training)
 - Second-stage evaluation:
   - Check to `second-stage-evalution` branch by `git checkout second-stage-evalution`
   - Refer to [this file](https://github.com/HaoDot/Video2BEV-Open/blob/second-stage-evalution/README.md)
 
-```
+```bash
 # Train:
 # In the first stage, we fine-tune the encoder with the instance loss and contrastive loss.
 # please change contents in train.sh
@@ -158,25 +158,6 @@ sh train.sh
 # please change contents in test_collect_weights.py and test.sh
 python test_collect_weights.py;
 sh test.sh
-```
-
-
-
-### train hao
-
-```
-# training and testing are on different devices
-# train: a800; test: 2080
-# training
-- train_bev_paired_fsra.py
-- train.sh
-# test
-- test_collect_weights.py
-scp -r models to 2080
-- test project:
-	- test_bev_group_feat_fusion_two_stage.py
-	- test_bev_group_feat_fusion_two_stage_train.py
-	- test.sh
 ```
 
 ## Weights
