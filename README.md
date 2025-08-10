@@ -4,7 +4,7 @@
 
 [![Video Thumbnail](./assets/UniV-bilibili.png)](https://www.bilibili.com/video/BV1SMhPzpEo2/?vd_source=d3914df06c5b07c8b14988e73b055956)
 
-<h1 align="center"> Click the image to the visualization of UniV</h1>s
+<h1 align="center"> Click the image to the visualization of UniV</h1>
 
 **Task 1: *Video-based* drone-view target localization.** (Drone-video -> Satellite-image) Given one drone-view video, the task aims to find the most similar satellite-view image to localize the target building in the satellite view. 
 
