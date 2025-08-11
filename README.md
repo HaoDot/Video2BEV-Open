@@ -14,8 +14,8 @@
 
 ## TODOs
 
-- [ ] (Optional) Release the 2-fps BEVs for both training and evaluation
-- [ ] Release the `requirements.txt`
+- [x] ~~(Optional) Release the 2-fps BEVs for both training and evaluation~~
+- [x] ~~Release the `requirements.txt`~~
 - [x] ~~Release the UniV dataset~~
 - [x] ~~Release the weight of the second stage~~
 - [x] ~~Release the ***evaluation*** code for the second stage~~
@@ -99,10 +99,13 @@ We note that there are no overlaps between 33 univeristies of training set and 3
 
 ### Installation
 
-```
-pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 -f https://download.pytorch.org/whl/torch_stable.html
-[todo] pip install -r requirements.txt
-# (optional bur recommended) install apex
+```bash
+conda create --name video2bev python=3.7
+# pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 -f https://download.pytorch.org/whl/torch_stable.html
+pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
+pip install -r requirements.txt
+
+# (optional but recommended) install apex
 git clone https://github.com/NVIDIA/apex.git
 cd apex
 python setup.py install --cuda_ext --cpp_ext
