@@ -10,7 +10,7 @@
 
 **Task 2: *Video-based* Drone navigation.** (Satellite-image -> Drone-video) Given one satellite-view image, the drone intends to find the most relevant place that it has passed by.
 
-[BaiduCloud](https://pan.baidu.com/s/1fTEN3E2V82tia0JKAoTkrw?pwd=4g47)|
+[BaiduCloud](https://pan.baidu.com/s/1fTEN3E2V82tia0JKAoTkrw?pwd=4g47)|[Google Drive](https://drive.google.com/drive/folders/1AtteXCnPGgYmqzKGAZHDqkChPocfNW3Q?usp=sharing)|
 
 ## TODOs
 
