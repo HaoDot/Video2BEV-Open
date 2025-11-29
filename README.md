@@ -1,16 +1,35 @@
-<h1 align="center"> UniV-Baseline </h1>
+<div align="center">
 
-<h1 align="left"> Download UniV</h1>
+# UniV-Baseline
+### The Official Baseline for **UniV**: the First Large-Scale Video-Based University Geo-Localization Benchmark  
+**Drone Video ↔ Satellite Image Cross-View Retrieval & Navigation**
 
-[![Video Thumbnail](./assets/UniV-bilibili.png)](https://www.bilibili.com/video/BV1SMhPzpEo2/?vd_source=d3914df06c5b07c8b14988e73b055956)
+[![arXiv](https://img.shields.io/badge/arXiv-2411.13610-b31b1b.svg)](https://arxiv.org/abs/2411.13610)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Stars](https://img.shields.io/github/stars/HaoDot/Video2BEV-Open?style=social)](https://github.com/HaoDot/Video2BEV-Open)
+[![Forks](https://img.shields.io/github/forks/HaoDot/Video2BEV-Open?style=social)](https://github.com/HaoDot/Video2BEV-Open)
 
-<h1 align="center"> Click the image to the visualization of UniV</h1>
+![](https://www.zdzheng.xyz/resource-img/UniV.webp)
 
-**Task 1: *Video-based* drone-view target localization.** (Drone-video -> Satellite-image) Given one drone-view video, the task aims to find the most similar satellite-view image to localize the target building in the satellite view. 
+• Watch full results on Bilibili: [![Bilibili](https://img.shields.io/badge/Bilibili-Watch-red?logo=bilibili)](https://www.bilibili.com/video/BV1SMhPzpEo2/)
 
-**Task 2: *Video-based* Drone navigation.** (Satellite-image -> Drone-video) Given one satellite-view image, the drone intends to find the most relevant place that it has passed by.
+</div>
 
-[BaiduCloud](https://pan.baidu.com/s/1fTEN3E2V82tia0JKAoTkrw?pwd=4g47)|[Google Drive](https://drive.google.com/drive/folders/1AtteXCnPGgYmqzKGAZHDqkChPocfNW3Q?usp=sharing)|
+## 🔥 Highlights
+
+- First **video-to-satellite** geo-localization benchmark with **real drone videos** (not image-only!)
+- Two challenging tasks:  
+  → **Task 1**: Video-based drone-view → satellite localization  
+  → **Task 2**: Satellite-guided drone video navigation  
+- Zero university overlap between train/val/test → extremely challenging domain gap
+- Full training/evaluation code + pretrained weights released
+- Strong baseline using **Video2BEV + Two-stage training**
+
+> Paper: **[Video2BEV: Transforming Drone Videos to BEVs for Video-based Geo-localization](https://arxiv.org/abs/2411.13610)** (arXiv 2024)
+
+---
+
+
 
 ## TODOs
 
@@ -36,6 +55,10 @@
 ## About Dataset
 
 ![image-20250730152824047](./assets/image-20250730152824047.png)
+
+### Download
+
+[BaiduCloud](https://pan.baidu.com/s/1fTEN3E2V82tia0JKAoTkrw?pwd=4g47)|[Google Drive](https://drive.google.com/drive/folders/1AtteXCnPGgYmqzKGAZHDqkChPocfNW3Q?usp=sharing)|
 
 The dataset split is as follows: 
 | Split  for the each subset | #data | #buildings | #universities|
