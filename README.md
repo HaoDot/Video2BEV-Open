@@ -25,7 +25,7 @@
 - Full training/evaluation code + pretrained weights released
 - Strong baseline using **Video2BEV + Two-stage training**
 
-> Paper: **[Video2BEV: Transforming Drone Videos to BEVs for Video-based Geo-localization](https://arxiv.org/abs/2411.13610)** (arXiv 2024)
+> Paper: **[Video2BEV: Transforming Drone Videos to BEVs for Video-based Geo-localization](https://arxiv.org/abs/2411.13610)** (ICCV 2025)
 
 ---
 
