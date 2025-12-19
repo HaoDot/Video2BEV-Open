@@ -141,7 +141,7 @@ If you have any question of installing apex, please refer to [issue-2](https://g
 
 - cat and unzip the dataset: `cat UniV.tar.xz.* | tar -xvJf - --transform 's|.*/|UniV/|'`
 
-- [Optional] If you are interested in reproducing or evaluating the proposed Video2BEV, please feel free to contact us and ask for **BEVs** and **synthetic negative samples**.
+- [Optional] If you are interested in reproducing or evaluating the proposed Video2BEV, please feel free to contact us and ask for **BEVs** and **synthetic negative samples** (which is fine-tuned via [diffusers](https://github.com/huggingface/diffusers)).
 - [Optional] If you are interested in the proposed Video2BEV Transformation, please feel free to contact us and ask for **SFM** and **3DGS** outputs.
 
 ## Training & Evaluation
