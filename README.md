@@ -177,7 +177,7 @@ sh test.sh
 
 ```bash
 # Train:
-# In the first stage, we fine-tune the encoder with the instance loss and contrastive loss.
+# In the second stage, we fine-tune the encoder with the instance loss and contrastive loss.
 # please change contents in train.sh
 sh train.sh
 
