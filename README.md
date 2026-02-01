@@ -243,8 +243,8 @@ The following paper uses and reports the result of the baseline model. You may c
 @article{ju2024video2bev,
   title={Video2bev: Transforming drone videos to bevs for video-based geo-localization},
   author={Ju, Hao and Huang, Shaofei and Liu, Si and Zheng, Zhedong},
-  journal={arXiv preprint arXiv:2411.13610},
-  year={2024}
+  journal=ICCV,
+  year={2025}
 }
 ```
 Others:
