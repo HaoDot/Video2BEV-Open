@@ -58,7 +58,7 @@
 
 ### Download
 
-[BaiduCloud](https://pan.baidu.com/s/1fTEN3E2V82tia0JKAoTkrw?pwd=4g47)|[Google Drive](https://drive.google.com/drive/folders/1AtteXCnPGgYmqzKGAZHDqkChPocfNW3Q?usp=sharing)|
+[BaiduCloud](https://pan.baidu.com/s/1fTEN3E2V82tia0JKAoTkrw?pwd=4g47)|[Google Drive](https://drive.google.com/drive/folders/14aWwrWIGzUp22krMgeimQXDRBsUkAAkK?usp=drive_link)|
 
 The dataset split is as follows: 
 | Split  for the each subset | #data | #buildings | #universities|
@@ -141,7 +141,15 @@ If you have any question of installing apex, please refer to [issue-2](https://g
 
 - cat and unzip the dataset: `cat UniV.tar.xz.* | tar -xvJf - --transform 's|.*/|UniV/|'`
 
-- [Optional] If you are interested in reproducing or evaluating the proposed Video2BEV, please feel free to contact us and ask for **BEVs** and **synthetic negative samples** (which is fine-tuned via [diffusers](https://github.com/huggingface/diffusers)).
+- [Optional] If you are interested in reproducing or evaluating the proposed Video2BEV, please ~~feel free to contact us and ask for~~ download **BEVs** and **synthetic negative samples** (which is fine-tuned via [diffusers](https://github.com/huggingface/diffusers)) via [baidu-disk](https://pan.baidu.com/s/12fSIgKzrMtrs9JNCeYKOPA?pwd=1qve) or [google-drive](https://drive.google.com/drive/folders/1Yi8Ducbvb5LJW7stbeX6VUhJlKt-YDsb?usp=drive_link).
+  - Unzip UniV-supp
+    - `cd UniV-supp`
+    - `cat UniV-supp.tar.xz.* | tar -xvJf - --transform 's|.*/|UniV-supp/|'`
+
+  - Organize UniV-supp
+    - set path in `organize_univ-supp.py` (in the above downloaded)
+    - `python ./organize_univ-supp.py`
+
 - [Optional] If you are interested in the proposed Video2BEV Transformation, please feel free to contact us and ask for **SFM** and **3DGS** outputs.
 
 ## Training & Evaluation
