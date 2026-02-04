@@ -138,8 +138,9 @@ If you have any question of installing apex, please refer to [issue-2](https://g
 
 ## Dataset & Preparation
 - Download UniV.
-
-- cat and unzip the dataset: `cat UniV.tar.xz.* | tar -xvJf - --transform 's|.*/|UniV/|'`
+- cat and unzip the dataset: 
+  - `mkdir UniV`
+  - `cat UniV.tar.xz.* | tar -xJf - -C UniV --transform='s/\*/_/g'`
 
 - [Optional] If you are interested in reproducing or evaluating the proposed Video2BEV, please ~~feel free to contact us and ask for~~ download **BEVs** and **synthetic negative samples** (which is fine-tuned via [diffusers](https://github.com/huggingface/diffusers)) via [baidu-disk](https://pan.baidu.com/s/12fSIgKzrMtrs9JNCeYKOPA?pwd=1qve) or [google-drive](https://drive.google.com/drive/folders/1Yi8Ducbvb5LJW7stbeX6VUhJlKt-YDsb?usp=drive_link).
   - Unzip UniV-supp
@@ -149,8 +150,6 @@ If you have any question of installing apex, please refer to [issue-2](https://g
   - Organize UniV-supp
     - set path in `organize_univ-supp.py` (in the above downloaded)
     - `python ./organize_univ-supp.py`
-
-- [Optional] If you are interested in the proposed Video2BEV Transformation, please feel free to contact us and ask for **SFM** and **3DGS** outputs.
 
 ## Training & Evaluation
 
