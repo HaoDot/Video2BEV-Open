@@ -152,6 +152,9 @@ If you have any question of installing apex, please refer to [issue-2](https://g
     - set path in `organize_univ-supp.py` (in the above downloaded)
     - `python ./organize_univ-supp.py`
 
+- **Note**
+  - 281 not in training split(2fps), you can download from University 1652 or extract from high fps
+
 ## Training & Evaluation
 
 ### Training
